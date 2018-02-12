@@ -2,6 +2,11 @@
 
 Cop[y a Mastodon instance's custom e]moji [into Pleroma format]
 
+## Build
+
+> mix deps.get
+> mix escript.build
+
 ## Usage
 
 > copmoji <domain name> <-m|-u>
