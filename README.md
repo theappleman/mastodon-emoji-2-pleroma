@@ -9,13 +9,13 @@ Cop[y a Mastodon instance's custom e]moji [into Pleroma format]
 
 ## Usage
 
-> copmoji <domain name> <-m|-u>
+> copmoji example.org <-m|-u>
 
 ### URL mode
 
-> copmoji -u <domain name>
+> copmoji -u example.org
 
-Pull the list of custom emoji from the Mastodon instance at <domain name>.
+Pull the list of custom emoji from the Mastodon instance at "example.org".
 From the list, pull out the "url" attribute of each item and print it.
 
 This list can be passed to wget (-i mode, or with xargs) to download the emoji to a local folder.
@@ -26,9 +26,9 @@ This list can be passed to wget (-i mode, or with xargs) to download the emoji t
 
 ### Mapping mode
 
-> copmoji -m <domain name>
+> copmoji -m example.org
 
-Pull the list of custom emoji from the Mastodon instance at <domain name>.
+Pull the list of custom emoji from the Mastodon instance at "example.org".
 From the list, pull the "shortcode" and the basename of the filename of the emoji image.
 
 With this piece of information, compile the custom_emoji.txt entries suitable for pleroma.
