@@ -4,7 +4,7 @@ Cop[y a Mastodon instance's custom e]moji [into Pleroma format]
 
 ## Build
 
-> mix deps.get
+> mix deps.get  
 > mix escript.build
 
 ## Usage
@@ -20,8 +20,8 @@ From the list, pull out the "url" attribute of each item and print it.
 
 This list can be passed to wget (-i mode, or with xargs) to download the emoji to a local folder.
 
-> mkdir example.org
-> cd example.org
+> mkdir example.org  
+> cd example.org  
 > copmoji -u example.org | xargs --no-run-if-empty wget
 
 ### Mapping mode
